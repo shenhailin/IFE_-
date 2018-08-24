@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #cent {
+            text-align: center;
+        }
+
+        .tistyle {
+            -webkit-transition: color 1s;
+            -moz-transition: color 1s;
+            -o-transition: color 1s;
+            transition: color 1s;
+        }
+
+        .title-display {
+            color: steelblue;
+        }
+
+        .costyle {
+            width: 0px;
+            height: 5px;
+            background: steelblue;
+            margin: -20px auto;
+            margin-bottom: 60px;
+            -webkit-transition: width 0.5s ease-out;
+            -moz-transition: width 0.5s ease-out;
+            -o-transition: width 0.5s ease-out;
+            transition: width 0.5s ease-out;
+        }
+
+        .btstyle {
+            width: 90px;
+            border: 1px solid #ccc;
+            background-color: #E0EEE0;
+            border-radius: 7px;
+            font-size: 17px;
+            outline: none;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.19);
+            -webkit-transition: width 0.5s ease-out;
+            -moz-transition: width 0.5s ease-out;
+            -o-transition: width 0.5s ease-out;
+            transition: width 0.5s ease-out;
+        }
+
+        .btstyle:hover {
+            width: 120px;
+        }
+
+        .content-width {
+            width: 135px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cent">
+        <h1 id="title" class="tistyle">前端学院</h1>
+        <div id="content" class="costyle"></div>
+        <button id="btn" class="btstyle">切换样式</button>
+    </div>
+    <script>
+        var btn = document.querySelector("#btn"),
+            title = document.querySelector("#title"),
+            content = document.querySelector("#content");
+        btn.addEventListener("click", function () {
+            title.classList.toggle("title-display");
+            content.classList.toggle("content-width");
+        });
+        title.addEventListener("transitionend", function () {
+            title.classList.remove("title-display");
+            content.classList.remove("content-width");
+        });
+    </script>
+</body>
+
+</html>
