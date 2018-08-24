@@ -7,7 +7,7 @@
 [预览](https://shenhailin.github.io/IFE_Design/test2.html)
 ## Day3: CSS transition 和 CSS transform 配合制作动画
 [课程]()
-[预览](https://shenhailin.github.io/IFE_Design/.)
+[预览](https://shenhailin.github.io/IFE_Design/test3.html)
 ## Day4: 3D 空间的卡片翻转动效
 [课程]()
 [预览]()
