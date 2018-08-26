@@ -17,9 +17,4 @@
 ## Day6: 利用 CSS animation 制作一个炫酷的 Slider
 [课程](http://ife.baidu.com/course/detail/id/33)
 [预览]()
-## Day7: 使用 animate.css 实现一个优雅的登录框
-[课程](http://ife.baidu.com/course/detail/id/34)
-[预览]()
-## Day8: 把 AE 动画转换成 Web 原生动画
-[课程](http://ife.baidu.com/course/detail/id/35)
-[预览]()
+
