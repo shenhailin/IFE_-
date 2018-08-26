@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .first {
+            margin: 50px auto;
+            width: 250px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+
+        .second {
+            width: 250px;
+            height: 350px;
+            background: url('img/正面.jpg');
+            transition: transform 1s linear, background 0.01s linear 0.5s;
+            -webkit-transition: transform 1s linear, background 0.01s linear 0.5s;
+            -moz-transition: transform 1s linear, background 0.01s linear 0.5s;
+            -o-transition: transform 1s linear, background 0.01s linear 0.5s;
+        }
+
+        .second:hover {
+            background: url('img/反面.jpg');
+            transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <div class="second"></div>
+    </div>
+</body>
+</html>

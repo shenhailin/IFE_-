@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #EAEAEA;
+        }
+        .outside {
+            width: 900px;
+            margin: 100px auto;
+            -webkit-perspective: 800px;
+            -moz-perspective: 800px;
+            perspective: 1000px;
+        }
+
+        .wraper {
+            margin-left: 300px;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        img {
+            position: absolute;
+            width: 200px;
+            height: 130px;           
+        }
+
+        img:nth-child(1) {
+            transform: rotateY(0deg) translateZ(297px)
+        }
+
+        img:nth-child(2) {
+            transform: rotateY(40deg) translateZ(297px)
+        }
+
+        img:nth-child(3) {
+            transform: rotateY(80deg) translateZ(297px)
+        }
+
+        img:nth-child(4) {
+            transform: rotateY(120deg) translateZ(297px)
+        }
+
+        img:nth-child(5) {
+            transform: rotateY(160deg) translateZ(297px)
+        }
+
+        img:nth-child(6) {
+            transform: rotateY(200deg) translateZ(297px)
+        }
+
+        img:nth-child(7) {
+            transform: rotateY(240deg) translateZ(297px)
+        }
+
+        img:nth-child(8) {
+            transform: rotateY(280deg) translateZ(297px)
+        }
+
+        img:nth-child(9) {
+            transform: rotateY(320deg) translateZ(297px)
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="outside">
+        <div class="wraper">
+            <img src="img/图片1.jpg">
+            <img src="img/图片2.jpg">
+            <img src="img/图片3.jpg">
+            <img src="img/图片4.jpg">
+            <img src="img/图片5.jpg">
+            <img src="img/图片6.jpg">
+            <img src="img/图片7.jpg">
+            <img src="img/图片8.jpg">
+            <img src="img/图片9.jpg">
+        </div>
+    </div>
+</body>
+
+</html>

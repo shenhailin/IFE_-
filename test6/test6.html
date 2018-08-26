@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .all {
+            width: 100%;
+            height: 100%;
+        }
+
+        .first {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        label {
+            width: 12%;
+            height: 130px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            z-index: 10;
+            filter: brightness(0.8);
+        }
+
+        label:hover {
+            filter: brightness(1);
+        }
+
+        .small img {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .img {
+            display: none;
+        }
+
+        #la1 {
+            background-image: url("img/图片1.jpg");
+            background-size: 100%;
+        }
+
+        #la2 {
+            background-image: url("img/图片2.jpg");
+            background-size: 100%;
+        }
+
+        #la3 {
+            background-image: url("img/图片3.jpg");
+            background-size: 100%;
+        }
+
+        #la4 {
+            background-image: url("img/图片4.jpg");
+            background-size: 100%;
+        }
+
+        #la5 {
+            background-image: url("img/图片5.jpg");
+            background-size: 100%;
+        }
+
+        .img:not(:checked)~.small img {
+            animation: oncheck 1s linear;
+        }
+
+        @keyframes oncheck {
+            0% {
+                opacity: 1;
+                z-index: 3;
+            }
+            100% {
+                opacity: 1;
+                z-index: 3;
+            }
+        }
+
+
+        .img:nth-child(1):checked~.small img:nth-child(1) {
+            animation: img1 .5s ease-out;
+            -o-animation: img1 .5s ease-out;
+            animation: img1 .5s ease-out;
+            opacity: 1;
+            z-index: 4;
+        }
+
+        .img:nth-child(2):checked~.small img:nth-child(2) {
+            -webkit-animation: img2 .5s ease-out;
+            -o-animation: img2 .5s ease-out;
+            animation: img2 .5s ease-out;
+            opacity: 1;
+            z-index: 4;
+        }
+
+        .img:nth-child(3):checked~.small img:nth-child(3) {
+            -webkit-animation: img3 1s ease-in;
+            -o-animation: img3 1s ease-in;
+            animation: img3 1s ease-in;
+            opacity: 1;
+            z-index: 4;
+        }
+
+        .img:nth-child(4):checked~.small img:nth-child(4) {
+            -webkit-animation: img4 1s ease-out;
+            -o-animation: img4 1s ease-out;
+            animation: img4 1s ease-out;
+            opacity: 1;
+            z-index: 4;
+        }
+
+        .img:nth-child(5):checked~.small img:nth-child(5) {
+            -webkit-animation: img5 .7s ease-in-out;
+            -o-animation: img5 .7s ease-in-out;
+            animation: img5 .7s ease-in-out;
+            opacity: 1;
+            z-index: 4;
+        }
+
+        @keyframes img1 {
+            from {
+                left: -500px;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        @keyframes img2 {
+            from {
+                top: 450px;
+            }
+            to {
+                top: 0;
+            }
+        }
+
+        @keyframes img3 {
+            from {
+                -webkit-transform: scale(0.1, 0.1);
+                -moz-transform: scale(0.1, 0.1);
+                -ms-transform: scale(0.1, 0.1);
+                -o-transform: scale(0.1, 0.1);
+                transform: scale(0.1, 0.1);
+            }
+            to {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+        }
+
+        @keyframes img4 {
+            from {
+                -webkit-transform: scale(2, 2);
+                -moz-transform: scale(2, 2);
+                -ms-transform: scale(2, 2);
+                -o-transform: scale(2, 2);
+                transform: scale(2, 2);
+            }
+            to {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+        }
+
+        @keyframes img5 {
+            from {
+                -webkit-transform: scale(0.1, 0.1) rotate(-360deg);
+                -moz-transform: scale(0.1, 0.1) rotate(-360deg);
+                -ms-transform: scale(0.1, 0.1) rotate(-360deg);
+                -o-transform: scale(0.1, 0.1) rotate(-360deg);
+                transform: scale(0.1, 0.1) rotate(-360deg);
+            }
+            to {
+                -webkit-transform: scale(1, 1) rotate(0deg);
+                -moz-transform: scale(1, 1) rotate(0deg);
+                -ms-transform: scale(1, 1) rotate(0deg);
+                -o-transform: scale(1, 1) rotate(0deg);
+                transform: scale(1, 1) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="first">
+            <input type="radio" name="rad" class="img" id="img1" checked>
+            <input type="radio" name="rad" class="img" id="img2">
+            <input type="radio" name="rad" class="img" id="img3">
+            <input type="radio" name="rad" class="img" id="img4">
+            <input type="radio" name="rad" class="img" id="img5">
+            <label for="img1" id="la1"></label>
+            <label for="img2" id="la2"></label>
+            <label for="img3" id="la3"></label>
+            <label for="img4" id="la4"></label>
+            <label for="img5" id="la5"></label>
+            <div class="small">
+                <img src="img/图片1.jpg">
+                <img src="img/图片2.jpg">
+                <img src="img/图片3.jpg">
+                <img src="img/图片4.jpg">
+                <img src="img/图片5.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
