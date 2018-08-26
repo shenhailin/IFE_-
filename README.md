@@ -10,11 +10,11 @@
 [预览](https://shenhailin.github.io/IFE_Design/test3.html)
 ## Day4: 3D 空间的卡片翻转动效
 [课程](http://ife.baidu.com/course/detail/id/31)
-[预览]()
+[预览](https://shenhailin.github.io/IFE_Design/test4/test4.html)
 ## Day5: 纯 CSS 制作绕中轴旋转的立方体
 [课程](http://ife.baidu.com/course/detail/id/32)
-[预览]()
+[预览](https://shenhailin.github.io/IFE_Design/test5.html)
 ## Day6: 利用 CSS animation 制作一个炫酷的 Slider
 [课程](http://ife.baidu.com/course/detail/id/33)
-[预览]()
+[预览](https://shenhailin.github.io/IFE_Design/test6/test6.html)
 
